@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Component Details</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Car Component Details</h1>
+        <div class="input-group">
+            <label for="serialNumber">Serial Number (Number Plate):</label>
+            <input type="text" id="serialNumber" placeholder="Enter serial number (e.g., DL13SN3489)">
+        </div>
+        <div class="input-group">
+            <label for="invoiceNumber">Invoice Number:</label>
+            <input type="text" id="invoiceNumber" placeholder="Enter invoice number (e.g., 12345678)">
+        </div>
+        <button id="getDetailsBtn">Get Details</button>
+        <pre id="detailsOutput"></pre>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="details.js"></script>
+</body>
+</html>

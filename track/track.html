@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoLedger</title>
+    <link rel="stylesheet" href="track.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <i class="fas fa-car"></i> AutoLedger
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="track.html" class="highlight">Track My Car</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Track Your Car</h2>
+            <form id="track-form">
+                <label for="car-type">Type of Car</label>
+                <select id="car-type" name="car-type">
+                    <option value="ev">EV</option>
+                    <option value="non-ev">Non-EV</option>
+                    <option value="hybrid">Hybrid</option>
+                </select>
+
+                <label for="number-plate">Enter serial on your car's number plate</label>
+                <input type="text" id="number-plate" name="number-plate" placeholder="e.g. ABC1234">
+
+                <label for="invoice-number">Enter invoice number</label>
+                <input type="text" id="invoice-number" name="invoice-number" placeholder="e.g. INV56789">
+
+                <button type="submit">TRACK</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
